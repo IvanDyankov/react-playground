@@ -1,0 +1,45 @@
+{
+  "name": "react-playground",
+  "version": "0.0.1",
+  "description": "React 16 with webpack",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "rimraf dist/",
+    "build": "yarn cleanup && cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "dev": "yarn cleanup && cross-env NODE_ENV=development webpack --config webpack.config.js --watch --mode development",
+    "start": " webpack-dev-server --hot --inline --mode development",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanDyankov/react-playground.git"
+  },
+  "keywords": [
+    "react16",
+    "webpack"
+  ],
+  "author": "Ivan Dyankov",
+  "license": "SEE LICENSE IN <LICENSE>",
+  "bugs": {
+    "url": "https://github.com/IvanDyankov/react-playground/issues"
+  },
+  "homepage": "https://github.com/IvanDyankov/react-playground#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "crossenv": "^0.0.2-security",
+    "html-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
